@@ -1,0 +1,90 @@
+//// ANIMATIONS //// 
+
+// Transitions
+@mixin transition($property, $duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+}
+  
+  
+//// COLORS //// 
+  
+@mixin bg-color($color) {
+  $value: map-get($bg-colors, $color);
+  
+  background-color: $value;
+}
+  
+@mixin color($color) {
+  $value: map-get($font-colors, $color);
+  
+  color: $value;
+}
+  
+  
+//// FONTS ////
+  
+@mixin font-size($index, $list) {
+  $value: map-get($list, $index);
+  
+  font-size: $value;
+}
+  
+@mixin font-family($type) {
+  $value: map-get($font-family, $type);
+  
+  font-family: $value;
+}
+  
+@mixin font-color($type) {
+  $value: map-get($font-colors, $type);
+  
+  color: $value;
+}
+  
+@mixin line-height($size, $list) {
+  $value: map-get($list, $size);
+  
+  line-height: $value;
+}
+
+@mixin font-weight($size, $list) {
+  $value: map-get($list, $size);
+  
+  font-weight: $value;
+}
+  
+  
+//// MEDIA QUERIES ////
+  
+@mixin breakpoint-up($size) {
+  $value: map-get($breakpoints-up, $size);
+  
+  @media screen and (min-width: $value) {
+    @content;
+  }
+  
+}
+  
+@mixin breakpoint-down($size) {
+  $value: map-get($breakpoints-down, $size);
+  
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+  
+  
+//// SPACES ////
+  
+@mixin padding-x($size) {
+  $val: map-get($padding-x, $size);
+  
+  padding-left: $val;
+  padding-right: $val;
+}
+  
+@mixin padding-y($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}

@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-family('primary');
+  @include font-color('primary');
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  @include padding-x('sm');
+
+
+  @include breakpoint-up('md') {
+    @include padding-x('md');
+  }
+
+  @include breakpoint-up('lg') {
+    @include padding-x('lg');
+  }
+}

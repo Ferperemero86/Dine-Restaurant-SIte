@@ -1,0 +1,13 @@
+a {
+  @include color('primary');
+  @include font-size('sm-3');
+
+
+  @include breakpoint-up('md') {
+    @include font-size('sm-3');
+  }
+
+  @include breakpoint-up('lg') {
+    @include font-size('sm-2');
+  }
+}

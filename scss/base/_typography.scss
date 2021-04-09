@@ -1,0 +1,46 @@
+p {
+  @include font-size('sm', $par-sizes);
+  @include line-height('sm', $par-lh-sizes);
+  @include font-weight('md', $font-weights);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('md', $par-sizes);
+    @include line-height('md', $par-lh-sizes);
+  }
+
+}
+
+
+h1 {
+  @include font-size('sm', $heading-sizes);
+  @include line-height('sm', $heading-lh-sizes);
+
+  @include breakpoint-up('md') {
+    @include font-size('lg', $heading-sizes);
+    @include line-height('lg', $heading-lh-sizes);
+  }
+
+  @include breakpoint-up('lg') {
+    @include font-size('xlg', $heading-sizes);
+    @include line-height('xlg', $heading-lh-sizes);
+  }
+
+}
+
+h2 {
+  @include font-size('sm', $heading-sizes);
+  @include line-height('sm', $heading-lh-sizes);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('md', $heading-sizes);
+    @include line-height('md', $heading-lh-sizes);
+  }
+
+}
+
+h3 {
+  @include font-size('xsm', $heading-sizes);
+  @include line-height('xsm', $heading-lh-sizes);
+}
