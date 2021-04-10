@@ -1,0 +1,91 @@
+.o-header-primary {
+  @extend .o-header;
+
+
+  @include breakpoint-up('lg') {
+    height: 51.25rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+}
+
+
+.o-header-primary {
+
+  .bg-img {
+
+    width: 100%;
+    height: 14.5rem;
+    @include fluid-bg-img;
+    background-image: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960664/Dine-Restaurant-Site/Homepage/bih4r3u4t1f0eouowb5r.jpg');
+
+
+    @include breakpoint-up('md') {
+      height: 23.375rem;
+      background-image: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960663/Dine-Restaurant-Site/Homepage/zo8figgns5aelqrsaofu.jpg');
+    }
+
+    @include breakpoint-up('lg') {
+      height: 100%;
+      background-position: right top;
+      background-image: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960660/Dine-Restaurant-Site/Homepage/dowm2gapbsfeie3tk6au.jpg');
+    }
+
+  }
+
+}
+
+
+.o-header-primary {
+
+  .content {
+
+    padding-bottom: 9.5rem;
+    text-align: center;
+    @include bg-color('fourth');
+
+    .a-logo-primary {
+
+      @include breakpoint-up('lg') {
+        margin-top: 4rem;
+        margin-bottom: 9.5rem;
+      }
+  
+    }
+
+    .m-text-block-primary {
+
+      margin-top: 2rem;    
+
+
+      @include breakpoint-up('lg') {
+        position: relative;
+        width: 38rem;
+      } 
+
+    }
+
+    .a-btn-primary {
+
+      margin-top: 1.5rem;
+    }
+
+
+    @include breakpoint-up('md') {
+      padding-bottom: 13.5rem;
+    }
+
+    @include breakpoint-up('lg') {
+      text-align: left;
+      width: 40%;
+    }
+
+  }
+  
+}
+
+
+
+
+

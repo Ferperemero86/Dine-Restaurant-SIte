@@ -1,18 +1,7 @@
-p {
-  @include font-size('sm', $par-sizes);
-  @include line-height('sm', $par-lh-sizes);
-  @include font-weight('md', $font-weights);
 
 
-  @include breakpoint-up('md') {
-    @include font-size('md', $par-sizes);
-    @include line-height('md', $par-lh-sizes);
-  }
 
-}
-
-
-h1 {
+.a-heading-1 {
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
 
@@ -28,7 +17,7 @@ h1 {
 
 }
 
-h2 {
+.a-heading-2 {
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
 
@@ -40,7 +29,7 @@ h2 {
 
 }
 
-h3 {
+.a-heading-3 {
   @include font-size('xsm', $heading-sizes);
   @include line-height('xsm', $heading-lh-sizes);
 }

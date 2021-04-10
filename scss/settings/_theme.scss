@@ -1,23 +1,18 @@
 //// COLORS ////
 
-$font-colors: (
-  'primary-1': $beaver,
-  'primary-2': $cod-gray,
-  'second-1': $mirage,
-  'second-2': $ebony,
-  'second-3': $shuttle-gray,
-);
-
-$bg-colors: (
-  'primary': $black,
-  'second': $carnation,
-  'third': $gun-powder,
-  'fourth': $mona-lisa,
-  'fifth': $white,
+$colors: (
+  'primary-1': hsl(27, 22%, 102%), //beaver
+  'primary-2': hsl(0, 0%, 7%), //cod gray
+  'second-1': hsl(234, 30%, 13%), // mirage
+  'second-2': hsl(218, 21%, 18%), //ebony clay
+  'second-3': hsl(217, 14%, 42%), //shuttle gray
+  'third': hsl(100, 100%, 100%), //white 
+  'fourth': hsl(0, 0, 0), // black
 );
 
 
 //// FONTS ////
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap');
 
 // Sizes
 $par-sizes: (
@@ -58,15 +53,15 @@ $font-weights: (
 
 // Family
 $font-family: (
-  'primary': $spartan,
+  'primary': 'Spartan',
 );
 
 
 //// MEDIA QUERIES ////
 $breakpoints-up: (
   'sm': 21.875rem,
-  'md': 48rem,
-  'lg': 75rem,
+  'md': 62rem,
+  'lg': 90rem,
 );
 
 $breakpoints-down: (

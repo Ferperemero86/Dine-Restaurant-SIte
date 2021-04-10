@@ -1,0 +1,10 @@
+.m-text-block-second {
+  @extend .m-text-block;
+  @include color('primary-2');
+
+  .a-heading-1 {
+
+    margin-bottom: 1rem;
+  }
+  
+}

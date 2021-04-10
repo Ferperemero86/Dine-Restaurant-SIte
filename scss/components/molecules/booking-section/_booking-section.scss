@@ -1,0 +1,14 @@
+.o-booking-section {
+  text-align: center;
+
+  .a-btn-primary {
+
+    margin-top: 1.5rem;
+  }
+
+
+  @include breakpoint-up('lg') {
+    text-align: left;
+  }
+
+}

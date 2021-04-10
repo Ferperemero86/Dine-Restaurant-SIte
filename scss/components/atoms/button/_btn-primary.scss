@@ -1,0 +1,16 @@
+.a-btn-primary {
+  @extend .a-btn;
+  width: 16rem;
+  padding: 1.5rem 3.3rem;
+  @include b-color('third');
+  @include color('third');
+  @include bg-color('fourth');
+
+
+  &:hover {
+    @include bg-color('third');
+    @include color('primary-2');
+    @include transition(background-color, 1s);
+  }
+
+}

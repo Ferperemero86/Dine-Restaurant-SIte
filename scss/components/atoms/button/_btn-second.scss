@@ -1,0 +1,7 @@
+.a-btn-second {
+  @extend .a-btn;
+  padding: 1.125rem 9.375rem;
+  @include bg-color('primary-2');
+  @include b-color('third');
+  @include color('third');
+}

@@ -1,0 +1,10 @@
+.m-text-block-primary {
+  @extend .m-text-block;
+  @include color('third');
+
+  .a-heading-1 {
+
+    margin-bottom: 1.5rem;
+  }
+
+}

@@ -1,0 +1,9 @@
+.m-text-block {
+  text-align: center;
+
+
+  @include breakpoint-up('lg') {
+    text-align: left;
+  }
+  
+}

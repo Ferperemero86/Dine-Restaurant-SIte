@@ -5,22 +5,39 @@
   transition-property: $property;
   transition-duration: $duration;
 }
+
+
+//// BG IMAGES ////
+
+// Fluid bg
+@mixin fluid-bg-img {
+  padding-top: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
   
   
 //// COLORS //// 
   
 @mixin bg-color($color) {
-  $value: map-get($bg-colors, $color);
+  $value: map-get($colors, $color);
   
   background-color: $value;
 }
+
+@mixin b-color($color) {
+  $value: map-get($colors, $color);
+
+  border-color: $value;
+}
   
 @mixin color($color) {
-  $value: map-get($font-colors, $color);
+  $value: map-get($colors, $color);
   
   color: $value;
 }
-  
+
+
   
 //// FONTS ////
   
@@ -36,11 +53,6 @@
   font-family: $value;
 }
   
-@mixin font-color($type) {
-  $value: map-get($font-colors, $type);
-  
-  color: $value;
-}
   
 @mixin line-height($size, $list) {
   $value: map-get($list, $size);

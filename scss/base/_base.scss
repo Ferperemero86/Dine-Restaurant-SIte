@@ -4,7 +4,7 @@ html {
 
 body {
   @include font-family('primary');
-  @include font-color('primary');
+  @include color('primary-2');
   font-size: 100%;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-  max-width: 90rem;
+  max-width: 125rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -23,13 +23,16 @@ body {
 .container {
   width: 100%;
   @include padding-x('sm');
-
-
+  
+  
   @include breakpoint-up('md') {
     @include padding-x('md');
   }
-
+  
   @include breakpoint-up('lg') {
     @include padding-x('lg');
   }
+    
+  
 }
+
