@@ -1,0 +1,17 @@
+.m-separator-primary {
+  @extend .m-separator;
+
+  .circle {
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-color: brown;
+  }
+
+  .line {
+
+    width: 5rem;
+    border-color: brown;
+  }
+  
+}

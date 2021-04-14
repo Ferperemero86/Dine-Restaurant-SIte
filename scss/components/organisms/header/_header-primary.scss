@@ -1,9 +1,9 @@
 .o-header-primary {
   @extend .o-header;
-
+  overflow: hidden;
 
   @include breakpoint-up('lg') {
-    height: 51.25rem;
+    height: 55.25rem;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -79,6 +79,7 @@
     @include breakpoint-up('lg') {
       text-align: left;
       width: 40%;
+      height: 100%;
     }
 
   }

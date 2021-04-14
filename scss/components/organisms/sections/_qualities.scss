@@ -1,0 +1,237 @@
+.o-qualities {
+  width: 100%;
+  position: relative;
+  top: -5rem;
+}
+
+
+.o-qualities {
+
+  .m-card-primary {
+    position: relative;
+
+    &:first-child {
+
+      .header {
+
+
+        @include breakpoint-up('lg') {
+          margin-left: 0;
+          margin-right: 5rem;
+        }
+      }
+      
+      &::before {
+        @include bg-block;
+        display: none;
+        top: 15rem;
+        left: -18rem;
+        width: 56rem;
+        height: 20rem;
+        background-color: grey;
+        opacity: 0.08;
+        border-radius: 6.25rem 0 0 0;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+        @include breakpoint-up('md') {
+          display: block;
+        }
+
+        @include breakpoint-up('lg') {
+          left: 0;
+        }
+  
+      }
+    }
+  
+    &:last-child {
+
+      .header {
+
+        @include breakpoint-up('lg') {
+          margin-right: 0;
+          margin-left: 5rem;
+        }
+      }
+  
+      &::after {
+        
+        @include bg-block;
+        display: none;
+        top: 15rem;
+        right: -20rem;
+        width: 56rem;
+        height: 20rem;
+        background-color: grey;
+        opacity: 0.08;
+        border-radius: 0 6.25rem 0 0;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+        @include breakpoint-up('md') {
+          display: block;
+        }
+
+        @include breakpoint-up('lg') {
+          right: 0;
+        }
+  
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: 6rem;
+
+
+      @include breakpoint-up('md') {
+        flex-direction: row-reverse;
+        margin-top: 7.5rem;
+      }
+
+    }
+
+
+    @include breakpoint-up('lg') {
+      display: flex;
+      align-items: center;
+      margin: auto;
+    }
+
+  }
+
+}
+
+
+.o-qualities {
+
+  .m-card-primary {
+
+    .header {
+
+      width: 25rem;
+      position: relative;
+      margin: 0 auto;
+
+      .a-img {
+
+        @include breakpoint-down('lg') {
+          box-shadow: 5px 5px 30px 5px;
+        }
+    
+      }
+  
+      .sm-img {
+  
+  
+        @include breakpoint-up('md') {
+          display: none;
+        }
+  
+      }
+  
+      .md-img {
+        display: none;
+  
+  
+        @include breakpoint-up('md') {
+          display: block;
+        }
+  
+        @include breakpoint-up('lg') {
+          display: none;
+        }
+  
+      }
+  
+      .lg-img {
+        display: none;
+  
+  
+        @include breakpoint-up('lg') {
+          display: block;
+        }
+  
+      }
+
+
+      @include breakpoint-up('md') {
+        width: 33rem;
+        margin: auto;
+      }
+  
+      @include breakpoint-up('lg') {
+        width: 35rem;
+      }
+  
+    }
+
+  }
+
+}
+
+
+.o-qualities {
+
+  .m-card-primary {
+
+    .body {
+
+      margin-left: auto;
+      margin-right: auto;
+      width: 22rem;
+  
+  
+      @include breakpoint-up('md') {
+        width: 35rem;
+      }
+  
+      @include breakpoint-up('lg') {
+        width: 33rem;
+      }
+  
+    }
+
+  }
+}
+
+
+.o-qualities {
+
+  .separator {
+
+    display: none;
+
+
+    @include breakpoint-up('md') {
+
+    }
+  }
+}
+
+.o-qualities {
+
+  .icon {
+
+    display: none;
+
+
+    @include breakpoint-up('md') {
+      display: block;
+      position: absolute;
+      right: -6rem;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+
+    @include breakpoint-up('lg') {
+      right: -5rem;
+    }
+
+  }
+
+    
+}
+
+
+  

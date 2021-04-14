@@ -6,6 +6,11 @@
   transition-duration: $duration;
 }
 
+// Horizontal Flip
+@mixin horizontal-flip {
+  transform: rotateY(180deg);
+}
+
 
 //// BG IMAGES ////
 
@@ -15,7 +20,14 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-  
+
+// Bg block
+@mixin bg-block {
+  content: '';
+  position: absolute;
+  mix-blend-mode: normal;
+  z-index: -1;
+}
   
 //// COLORS //// 
   

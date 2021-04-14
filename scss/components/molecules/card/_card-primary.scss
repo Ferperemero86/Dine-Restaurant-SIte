@@ -1,0 +1,24 @@
+.m-card-primary {
+  @extend .m-card;
+
+  .header {
+
+    width: 100%;
+  }
+
+  .body {
+
+    width: 100%;
+
+    .m-separator-primary {
+      margin: 3rem auto;
+
+
+      @include breakpoint-up('lg') {
+        text-align: left;
+      }
+      
+    }
+    
+  }
+}

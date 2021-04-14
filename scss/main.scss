@@ -17,6 +17,9 @@
 @import './components/atoms/logo/logo-primary';
 @import './components/atoms/logo/logo-second';
 
+@import './components/atoms/img/img';
+@import './components/atoms/img/img-primary';
+
 @import './components/atoms/text/text';
 
 @import './components/atoms/heading/heading';
@@ -27,6 +30,14 @@
 @import './components/molecules/text-block/text-block-primary';
 @import './components/molecules/text-block/text-block-second';
 
+@import './components/molecules/card/card';
+@import './components/molecules/card/card-primary';
+
+@import './components/molecules/separator/separator';
+@import './components/molecules/separator/separator-primary';
+
 
 @import './components/organisms/header/header';
 @import './components/organisms/header/header-primary';
+
+@import './components/organisms/sections/qualities';

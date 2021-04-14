@@ -1,0 +1,16 @@
+.a-img-primary {
+
+  height: 22.5rem;
+
+
+  @include breakpoint-up('md') {
+    width: 35.81rem;
+    height: 22.5rem;
+  }
+
+  @include breakpoint-up('lg') {
+    width: 33.75rem;
+    height: 45rem;
+  }
+
+}
