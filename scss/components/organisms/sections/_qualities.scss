@@ -28,7 +28,7 @@
         left: -18rem;
         width: 56rem;
         height: 20rem;
-        background-color: grey;
+        @include bg-color('second-3');
         opacity: 0.08;
         border-radius: 6.25rem 0 0 0;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -63,7 +63,7 @@
         right: -20rem;
         width: 56rem;
         height: 20rem;
-        background-color: grey;
+        @include bg-color('second-3');
         opacity: 0.08;
         border-radius: 0 6.25rem 0 0;
         transform: matrix(-1, 0, 0, 1, 0, 0);

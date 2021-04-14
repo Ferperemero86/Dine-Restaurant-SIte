@@ -585,12 +585,12 @@ body {
 .m-separator-primary .circle {
   width: 0.5rem;
   height: 0.5rem;
-  border-color: brown;
+  border-color: #9e8070;
 }
 
 .m-separator-primary .line {
   width: 5rem;
-  border-color: brown;
+  border-color: #9e8070;
 }
 
 .o-header, .o-header-primary {
@@ -707,7 +707,7 @@ body {
   left: -18rem;
   width: 56rem;
   height: 20rem;
-  background-color: grey;
+  background-color: #5c687a;
   opacity: 0.08;
   border-radius: 6.25rem 0 0 0;
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -743,7 +743,7 @@ body {
   right: -20rem;
   width: 56rem;
   height: 20rem;
-  background-color: grey;
+  background-color: #5c687a;
   opacity: 0.08;
   border-radius: 0 6.25rem 0 0;
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
