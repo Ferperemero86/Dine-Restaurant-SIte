@@ -1,0 +1,57 @@
+.o-menu {
+  width: 100%;
+  padding: 4.5rem 0;
+  @include bg-color('primary-2');
+  @include color('third');
+
+
+  @include breakpoint-up('lg') {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 4rem;
+  }
+
+}
+
+
+.o-menu {
+
+  .m-text-block {
+    margin-bottom: 4rem;
+
+    .m-separator {
+
+
+      @include breakpoint-up('lg') {
+        text-align: left;
+      }
+    }
+
+    .a-heading-2 {
+      margin-top: 2rem;
+    }
+
+
+    @include breakpoint-up('md') {
+      margin-top: 0.5rem;
+    }
+
+    @include breakpoint-up('lg') {
+      padding-right: 0;
+      text-align: left;
+    }
+
+  }
+
+}
+
+
+.o-menu {
+
+  .m-cards-primary {
+
+    padding-left: 4rem;
+  }
+}
+
+

@@ -1,0 +1,68 @@
+.m-cards-primary {
+
+
+  .m-card-second {
+
+    .body {
+
+      .m-text-block {
+
+        @include breakpoint-up('md') {
+          text-align: left;
+        }
+      }
+    }
+
+    @include breakpoint-up('md') {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 3.8rem;
+    }
+
+    @include breakpoint-up('lg') {
+      column-gap: 1.5rem;
+    }
+
+  }
+  
+}
+
+
+.m-cards-primary {
+
+  .m-card-second {
+
+    margin-top: 2.5rem;
+
+    .sm-img {
+
+
+      @include breakpoint-up('md') {
+        display: none;
+      }
+    }
+
+    .md-img {
+      display: none;
+
+      @include breakpoint-up('md') {
+        display: block;
+      }
+
+      @include breakpoint-up('lg') {
+        display: none;
+      }
+    }
+
+    .lg-img {
+      display: none;
+
+      @include breakpoint-up('lg') {
+        display: block;
+      }
+    }
+
+  }
+  
+}

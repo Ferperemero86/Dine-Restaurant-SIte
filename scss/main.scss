@@ -30,8 +30,11 @@
 @import './components/molecules/text-block/text-block-primary';
 @import './components/molecules/text-block/text-block-second';
 
+@import './components//molecules/cards/cards-primary';
+
 @import './components/molecules/card/card';
 @import './components/molecules/card/card-primary';
+@import './components/molecules/card/card-second';
 
 @import './components/molecules/separator/separator';
 @import './components/molecules/separator/separator-primary';
@@ -41,3 +44,4 @@
 @import './components/organisms/header/header-primary';
 
 @import './components/organisms/sections/qualities';
+@import './components/organisms/sections/menu';
