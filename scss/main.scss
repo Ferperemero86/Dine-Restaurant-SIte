@@ -36,6 +36,9 @@
 @import './components/molecules/card/card-primary';
 @import './components/molecules/card/card-second';
 
+@import './components/molecules/list/list';
+@import './components/molecules/list/list-primary';
+
 @import './components/molecules/separator/separator';
 @import './components/molecules/separator/separator-primary';
 
@@ -45,3 +48,4 @@
 
 @import './components/organisms/sections/qualities';
 @import './components/organisms/sections/menu';
+@import './components/organisms/sections/events';

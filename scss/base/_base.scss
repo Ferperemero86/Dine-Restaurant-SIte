@@ -36,3 +36,47 @@ body {
   
 }
 
+.img-responsive {
+
+  .sm-img {
+  
+  
+    @include breakpoint-up('md') {
+      display: none;
+    }
+
+  }
+
+  .md-img {
+    display: none;
+
+
+    @include breakpoint-up('md') {
+      display: inline-block;
+    }
+
+    @include breakpoint-up('lg') {
+      display: none;
+    }
+
+  }
+
+  .lg-img {
+    display: none;
+
+
+    @include breakpoint-up('lg') {
+      display: inline-block;
+    }
+
+  }
+  
+}
+
+a {
+  text-decoration: none;
+  @include color('primary-2');
+}
+
+
+

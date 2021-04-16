@@ -1,0 +1,12 @@
+.m-list {
+  @extend .m-list;
+  
+  .a-link, .a-text {
+
+    &:not(:first-child) {
+
+      margin-top: 1rem;
+    }
+  }
+
+}

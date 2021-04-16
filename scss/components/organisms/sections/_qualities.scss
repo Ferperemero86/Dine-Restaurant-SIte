@@ -54,6 +54,14 @@
           margin-left: 5rem;
         }
       }
+
+      .body {
+
+
+        @include breakpoint-up('lg') {
+          margin-left: 0rem;
+        }
+      }
   
       &::after {
         
@@ -120,39 +128,6 @@
         }
     
       }
-  
-      .sm-img {
-  
-  
-        @include breakpoint-up('md') {
-          display: none;
-        }
-  
-      }
-  
-      .md-img {
-        display: none;
-  
-  
-        @include breakpoint-up('md') {
-          display: block;
-        }
-  
-        @include breakpoint-up('lg') {
-          display: none;
-        }
-  
-      }
-  
-      .lg-img {
-        display: none;
-  
-  
-        @include breakpoint-up('lg') {
-          display: block;
-        }
-  
-      }
 
 
       @include breakpoint-up('md') {
@@ -174,6 +149,20 @@
 .o-qualities {
 
   .m-card-primary {
+
+    &:first-child {
+      
+      .body {
+
+
+        @include breakpoint-up('lg') {
+          justify-content: end;
+          margin-right: 0rem;
+        }
+  
+      }
+
+    }
 
     .body {
 

@@ -1,6 +1,6 @@
 .a-link {
   @include color('primary');
-   @include font-size('sm', $par-sizes);
+  @include font-size('sm', $par-sizes);
 
   
    @include breakpoint-up('lg') {
