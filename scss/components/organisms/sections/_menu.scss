@@ -8,7 +8,7 @@
   @include breakpoint-up('lg') {
     display: grid;
     grid-template-columns: 40% 60%;
-    column-gap: 4rem;
+    //column-gap: 4rem;
   }
 
 }
@@ -37,7 +37,7 @@
     }
 
     @include breakpoint-up('lg') {
-      padding-right: 0;
+      padding-right: 0rem;
       text-align: left;
     }
 
@@ -50,8 +50,17 @@
 
   .m-cards-primary {
 
-    padding-left: 4rem;
+    .m-card-second {
+
+      @include breakpoint-up('md') {
+        justify-items: end;
+        align-items: center;
+      }
+
+    }
+   
   }
+
 }
 
 
