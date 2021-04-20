@@ -33,47 +33,41 @@
 
 .o-events {
 
-  .m-card-second {
+  .m-list-primary {
 
-    .body {
+    .a-link {
 
-      .m-list-primary {
-
-        .a-link {
-
-          &:not(:last-child) {
-
-
-            @include breakpoint-up('md') {
-              margin-right: 2rem;
-            }
-
-            @include breakpoint-up('md') {
-              margin: 1rem 0rem;
-            }
-
-          }
-
-
-          @include breakpoint-up('lg') {
-            margin: 1rem 0rem;
-          }
-        }
+      &:not(:last-child) {
 
 
         @include breakpoint-up('md') {
-          display: flex;
-          justify-content: center;
+          margin-right: 2rem;
         }
 
         @include breakpoint-up('lg') {
-          flex-direction: column;
+          margin: 1rem 0rem;
         }
-      }
-     
-    }
-  }
 
+      }
+
+
+      @include breakpoint-up('lg') {
+        margin: 1rem 0rem;
+      }
+    }
+
+
+    @include breakpoint-up('md') {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include breakpoint-up('lg') {
+      flex-direction: column;
+    }
+    
+  }
+     
 }
 
 
