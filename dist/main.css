@@ -422,12 +422,16 @@ a {
   color: #121212;
 }
 
-.a-btn, .a-btn-primary, .a-btn-second {
+.a-btn, .a-btn-primary, .a-btn-second, .a-btn-third {
   text-align: center;
 }
 
-.a-btn:hover, .a-btn-primary:hover, .a-btn-second:hover {
+.a-btn:hover, .a-btn-primary:hover, .a-btn-second:hover, .a-btn-third:hover {
   cursor: pointer;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .a-btn-primary {
@@ -441,16 +445,24 @@ a {
 .a-btn-primary:hover {
   background-color: white;
   color: #121212;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .a-btn-second {
   padding: 1.125rem 9.375rem;
   background-color: #121212;
   border-color: white;
+  color: white;
+}
+
+.a-btn-third {
+  padding: 1.5rem 3.375rem;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.a-btn-third:hover {
+  background-color: #121212;
   color: white;
 }
 
@@ -639,7 +651,7 @@ a {
   margin-top: 1.5rem;
 }
 
-.m-card-second .body .m-list {
+.m-card-second .body .m-list, .m-card-second .body .m-list-second {
   text-align: center;
   margin-top: 2rem;
 }
@@ -648,12 +660,16 @@ a {
   margin-top: 3rem;
 }
 
-.m-list .a-link {
+.m-list .a-link, .m-list-second .a-link, .m-list .a-text, .m-list-second .a-text {
   display: block;
 }
 
-.m-list .a-link:not(:first-child), .m-list .a-text:not(:first-child) {
+.m-list .a-link:not(:first-child), .m-list-second .a-link:not(:first-child), .m-list .a-text:not(:first-child), .m-list-second .a-text:not(:first-child) {
   margin-top: 1rem;
+}
+
+.m-list-second {
+  color: white;
 }
 
 .m-separator, .m-separator-primary {
@@ -1094,5 +1110,116 @@ a {
 
 .o-events button {
   margin-top: 2rem;
+}
+
+.o-reservation {
+  height: 20.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960668/Dine-Restaurant-Site/Homepage/zg3akiqtea4l1heuo8kc.jpg") no-repeat center/cover;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-reservation {
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960675/Dine-Restaurant-Site/Homepage/drwkmwtnbadvgxljnxml.jpg") no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-reservation {
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960667/Dine-Restaurant-Site/Homepage/dpishjdwvzzhbiljvnzo.jpg") no-repeat center/cover;
+  }
+}
+
+.o-reservation .a-heading-2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .o-reservation .a-heading-2 {
+    margin-right: 2rem;
+  }
+}
+
+.o-footer, .o-footer-primary {
+  width: 100%;
+}
+
+.o-footer-primary {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #121212;
+  text-align: center;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-footer-primary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-footer-primary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .o-footer-primary .footer-logo {
+    text-align: left;
+  }
+}
+
+.o-footer-primary .footer-text {
+  margin-top: 2.5rem;
+}
+
+.o-footer-primary .footer-text .m-list-second {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-footer-primary .footer-text .m-list-second:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-footer-primary .footer-text .m-list-second {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .o-footer-primary .footer-text {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-footer-primary .footer-text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,8 @@
   &:hover {
     
     cursor: pointer;
+    @include transition(background-color, 1s);
+    //@include transition(color, 1s);
   }
 
 }

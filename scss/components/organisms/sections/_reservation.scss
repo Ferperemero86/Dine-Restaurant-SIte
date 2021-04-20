@@ -1,0 +1,39 @@
+.o-reservation {
+  height: 20.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+
+  background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960668/Dine-Restaurant-Site/Homepage/zg3akiqtea4l1heuo8kc.jpg') no-repeat center/cover;
+
+
+  @include breakpoint-up('md') {
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960675/Dine-Restaurant-Site/Homepage/drwkmwtnbadvgxljnxml.jpg') no-repeat center/cover;
+  }
+
+  @include breakpoint-up('lg') {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960667/Dine-Restaurant-Site/Homepage/dpishjdwvzzhbiljvnzo.jpg') no-repeat center/cover;
+  }
+
+}
+
+
+.o-reservation {
+
+  .a-heading-2 {
+
+    @include color('third');
+    margin-bottom: 1.5rem;
+
+
+    @include breakpoint-up('lg') {
+      margin-right: 2rem;
+    }
+  }
+
+}

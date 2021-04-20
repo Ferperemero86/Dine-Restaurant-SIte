@@ -1,0 +1,14 @@
+.a-btn-third {
+  @extend .a-btn;
+  padding: 1.5rem 3.375rem;
+  @include b-color('third');
+  @include color('third');
+  background-color: transparent;
+
+  &:hover {
+
+    @include bg-color('primary-2');
+    @include color('third');
+  }
+
+}

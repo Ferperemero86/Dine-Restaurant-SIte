@@ -10,7 +10,6 @@
   &:hover {
     @include bg-color('third');
     @include color('primary-2');
-    @include transition(background-color, 1s);
   }
 
 }
