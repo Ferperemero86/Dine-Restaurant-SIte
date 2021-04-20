@@ -1,0 +1,36 @@
+.o-header-second {
+  @extend .o-header;
+  height: 37.5rem;
+  padding-top: 3.5rem;
+  border: 1px solid;
+  text-align: center;
+  background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960560/Dine-Restaurant-Site/Booking/exk36gswxfkwj2rbbmcd.jpg') no-repeat center/cover;
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960562/Dine-Restaurant-Site/Booking/o9uw6wjfjft5ps51rsue.jpg') no-repeat center/cover;
+  }
+
+  @include breakpoint-up('lg') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960560/Dine-Restaurant-Site/Booking/gsftg55p20ybhamoicy3.jpg') no-repeat center/cover;
+  }
+
+}
+
+
+.o-header-second {
+
+  .a-logo-primary {
+
+    margin-bottom: 2.5rem;
+
+  }
+
+  .a-btn-primary {
+    margin-top: 1.5rem;
+  }
+
+}

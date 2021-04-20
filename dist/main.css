@@ -700,7 +700,7 @@ a {
   border-color: #9e8070;
 }
 
-.o-header, .o-header-primary {
+.o-header, .o-header-primary, .o-header-second {
   width: 100%;
 }
 
@@ -785,6 +785,39 @@ a {
     width: 40%;
     height: 100%;
   }
+}
+
+.o-header-second {
+  height: 37.5rem;
+  padding-top: 3.5rem;
+  border: 1px solid;
+  text-align: center;
+  background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960560/Dine-Restaurant-Site/Booking/exk36gswxfkwj2rbbmcd.jpg") no-repeat center/cover;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-header-second {
+    text-align: left;
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960562/Dine-Restaurant-Site/Booking/o9uw6wjfjft5ps51rsue.jpg") no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-header-second {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960560/Dine-Restaurant-Site/Booking/gsftg55p20ybhamoicy3.jpg") no-repeat center/cover;
+  }
+}
+
+.o-header-second .a-logo-primary {
+  margin-bottom: 2.5rem;
+}
+
+.o-header-second .a-btn-primary {
+  margin-top: 1.5rem;
 }
 
 .o-qualities {
