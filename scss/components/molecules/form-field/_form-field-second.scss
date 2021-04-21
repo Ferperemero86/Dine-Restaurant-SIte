@@ -1,0 +1,11 @@
+.m-form-field-second {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-content: center;
+  border-bottom: 1px solid;
+
+  span {
+    align-self: center;
+  }
+}

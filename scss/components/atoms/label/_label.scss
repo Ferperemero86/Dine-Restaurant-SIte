@@ -1,0 +1,8 @@
+.a-label {
+ display: block;
+
+ 
+ @include breakpoint-up('md') {
+   display: inline-block;
+ }
+}

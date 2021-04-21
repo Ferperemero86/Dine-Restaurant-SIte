@@ -1,0 +1,6 @@
+.a-select-primary {
+  @extend .a-select;
+  border: 0;
+  border-bottom: 1px solid;
+  @include b-color('second-3');
+}

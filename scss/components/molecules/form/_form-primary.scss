@@ -1,0 +1,28 @@
+.m-form-primary {
+  @extend .m-form;
+  width: 100%;
+  max-width: 35rem;
+  @include bg-color('third');
+
+  @include breakpoint-up('lg') {
+    box-shadow: 5px 5px 15px 5px;
+  }
+}
+
+.m-form-primary {
+
+  .a-input-primary,
+  .m-form-field-primary {
+
+    margin-top: 2rem;
+  }
+
+  .a-btn-second {
+
+    margin: 2rem 5%;
+  }
+
+}
+
+
+

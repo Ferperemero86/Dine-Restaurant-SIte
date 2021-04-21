@@ -1,7 +1,16 @@
 .a-btn-second {
   @extend .a-btn;
-  padding: 1.125rem 9.375rem;
+  width: 90%;
+  padding: 1.125rem 0;
   @include bg-color('primary-2');
   @include b-color('third');
   @include color('third');
+  @include b-color('primary-2');
+
+  &:hover {
+
+    @include bg-color('third');
+    @include color('primary-2');
+  }
+
 }

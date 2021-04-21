@@ -1,0 +1,50 @@
+.m-form-field-primary {
+  @extend .m-form-field;
+
+  
+  @include breakpoint-up('md') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.m-form-field-primary {
+
+  .inputs {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .a-input-primary {
+
+      width: 30%;
+
+
+      @include breakpoint-up('md') {
+        width: 20%;
+        margin-top: 0;
+      }
+    }
+
+
+    @include breakpoint-up('md') {
+      width: 60%;
+    }
+
+  }
+
+}
+
+.m-form-field-primary {
+
+  .a-select-primary {
+
+    align-self: flex-end;
+    padding-bottom: 0.8rem;
+    
+  }
+
+}

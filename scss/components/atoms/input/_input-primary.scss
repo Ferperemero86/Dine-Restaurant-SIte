@@ -1,0 +1,14 @@
+.a-input-primary {
+  @extend .a-input;
+  width: 100%;
+  height: 2.81rem;
+  border: 0;
+  border-bottom: 1px solid;
+  @include b-color('second-3');
+
+  &:focus {
+
+    outline: none;
+  }
+  
+}
