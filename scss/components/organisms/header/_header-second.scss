@@ -1,5 +1,6 @@
 .o-header-second {
   @extend .o-header;
+  position: relative;
   height: 37.5rem;
   padding-top: 3.5rem;
   border: 1px solid;

@@ -12,6 +12,9 @@
 
     <!-- Header -->
     <header class="o-header-second">
+      <div class="m-menu-primary">
+        <a href="index.html" class="a-link-primary">Home</a>
+      </div>
       <div class="content container">
         <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960458/Dine-Restaurant-Site/wxyk5x0bijfd7dd3pztu.svg" 
              alt="logo" 
@@ -28,34 +31,41 @@
 
     <!-- Reservation form -->
     <section class="o-reservation-form container">
+      <div class="m-notification-primary hidden">
+        <div class="text-block-second">
+          <div class="a-close-icon-primary"></div>
+          <h3 class="a-heading-3">Thanks for booking!</h3>
+          <p class="a-text">Your reservation was successful. See you soon!</p>
+        </div>
+      </div>
       <form class="m-form-primary">
-        <input type="text" class="a-input-primary" placeholder="Name">
-        <input type="text" class="a-input-primary" placeholder="Email">
+        <input type="text" name="name" class="name a-input-primary" placeholder="Name">
+        <input type="text" name="email" class="email a-input-primary" placeholder="Email">
         <div class="m-form-field-primary">
           <label for="date" class="a-label-primary">Pick a date</label>
           <div class="inputs">
-            <input type="text" class="a-input-primary" placeholder="MM">
-            <input type="text" class="a-input-primary" placeholder="DD">
-            <input type="text" class="a-input-primary" placeholder="YYYY">
+            <input type="text" name="day" class="day a-input-primary" placeholder="DD">
+            <input type="text" name="month" class="month a-input-primary" placeholder="MM">
+            <input type="text" name="year" class="year a-input-primary" placeholder="YYYY">
           </div>
         </div>
         <div class="m-form-field-primary">
-          <label for="time" class="a-label-primary">Pick a date</label>
+          <label for="time" class="a-label-primary">Pick a time</label>
           <div class="inputs">
-            <input type="number" class="a-input-primary" placeholder="09">
-            <input type="number" class="a-input-primary" placeholder="00">
-            <select name="form-select" class="a-select-primary" id="">
-              <option value="AM" selected>AM</option>
-              <option value="PM">PM</option>
+            <input type="number" name="hour" class="hour a-input-primary" placeholder="00">
+            <input type="number" name="minutes" class="minutes a-input-primary" placeholder="00">
+            <select name="day-time" class="a-select-primary">
+              <option name="am" value="AM" selected>AM</option>
+              <option name="pm" value="PM">PM</option>
             </select>
           </div>
         </div>
         <div class="m-form-field-second">
-          <button class="a-btn-fourth">-</button>
-          <span>4 people</span>
-          <button class="a-btn-fourth">+</button>
+          <button class="a-btn-fourth form-minus-btn">-</button>
+          <span class="form-customers-num">1 People</span>
+          <button class="a-btn-fourth form-plus-btn">+</button>
         </div>
-        <button class="a-btn-second">MAKE RESERVATION</button>
+        <button class="form-submit-btn a-btn-second">MAKE RESERVATION</button>
       </form>
     </section>
 
@@ -80,32 +90,7 @@
       </div>
     </footer>
     
-    <main>
-
-
-    </main>
   </div>
-
-  <!--
-  
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
-  -->
 
   <script src="./js/main.js"></script>
 

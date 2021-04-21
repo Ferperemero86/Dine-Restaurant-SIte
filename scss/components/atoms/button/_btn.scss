@@ -7,4 +7,9 @@
     @include transition(background-color, 1s);
   }
 
+  &:focus {
+
+    outline: none;
+  }
+
 }

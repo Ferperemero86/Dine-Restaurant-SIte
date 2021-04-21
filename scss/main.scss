@@ -23,9 +23,12 @@
 @import './components/atoms/img/img-primary';
 
 @import './components/atoms/text/text';
+@import './components/atoms/text/text-warning';
 
 @import './components/atoms/heading/heading';
+
 @import './components/atoms/link/link';
+@import './components/atoms/link/link-primary';
 
 @import './components/atoms/input/input';
 @import './components/atoms/input/input-primary';
@@ -35,6 +38,10 @@
 
 @import './components/atoms/select/select';
 @import './components/atoms/select/select-primary';
+
+@import './components/atoms/close-icon/close-icon';
+@import './components/atoms/close-icon/close-icon-primary';
+
 
 
 @import './components/molecules/text-block/text-block';
@@ -58,8 +65,14 @@
 @import './components/molecules/form-field/form-field-primary';
 @import './components/molecules/form-field/form-field-second';
 
+@import './components/molecules/notification/notification';
+@import './components/molecules/notification/notification-primary';
+
 @import './components/molecules/form/form';
 @import './components/molecules/form/form-primary';
+
+@import './components/molecules/menu/menu';
+@import './components/molecules/menu/menu-primary';
 
 
 @import './components/organisms/header/header';

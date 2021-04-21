@@ -73,6 +73,22 @@ body {
   
 }
 
+.warning {
+  @include color('warning');
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  @include transition('opacity', 1s);
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  @include transition('opacity', 1s);
+}
+
 a {
   text-decoration: none;
   @include color('primary-2');

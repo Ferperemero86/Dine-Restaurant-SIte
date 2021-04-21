@@ -417,6 +417,28 @@ body {
   }
 }
 
+.warning {
+  color: red;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-property: "opacity";
+  transition-property: "opacity";
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-property: "opacity";
+  transition-property: "opacity";
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 a {
   text-decoration: none;
   color: #121212;
@@ -432,6 +454,10 @@ a {
   transition-property: background-color;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.a-btn:focus, .a-btn-primary:focus, .a-btn-second:focus, .a-btn-third:focus, .a-btn-fourth:focus {
+  outline: none;
 }
 
 .a-btn-primary {
@@ -515,7 +541,7 @@ a {
   }
 }
 
-.a-text {
+.a-text, .a-text-warning {
   display: inline-block;
   font-size: 0.9375rem;
   line-height: 1.75rem;
@@ -523,10 +549,14 @@ a {
 }
 
 @media screen and (min-width: 62rem) {
-  .a-text {
+  .a-text, .a-text-warning {
     font-size: 1.125rem;
     line-height: 1.875rem;
   }
+}
+
+.a-text-warning::-webkit-input-placeholder {
+  color: red;
 }
 
 .a-heading-1 {
@@ -565,14 +595,18 @@ a {
   line-height: 1.75rem;
 }
 
-.a-link {
+.a-link, .a-link-primary {
   font-size: 0.9375rem;
 }
 
 @media screen and (min-width: 90rem) {
-  .a-link {
+  .a-link, .a-link-primary {
     font-size: 1.125rem;
   }
+}
+
+.a-link-primary {
+  color: white;
 }
 
 .a-input, .a-input-primary {
@@ -609,6 +643,37 @@ a {
   border: 0;
   border-bottom: 1px solid;
   border-color: #5c687a;
+}
+
+.a-close-icon, .a-close-icon-primary {
+  position: relative;
+}
+
+.a-close-icon:after, .a-close-icon-primary:after {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.a-close-icon:before, .a-close-icon-primary:before {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.a-close-icon-primary {
+  width: 30px;
+  height: 30px;
+  left: 100%;
+  top: -1rem;
+}
+
+.a-close-icon-primary:after, .a-close-icon-primary:before {
+  height: 30px;
+  border-left: 2px solid;
+  left: 14px;
 }
 
 .m-text-block, .m-text-block-primary, .m-text-block-second {
@@ -709,11 +774,11 @@ a {
   margin-top: 3rem;
 }
 
-.m-list .a-link, .m-list-second .a-link, .m-list .a-text, .m-list-second .a-text {
+.m-list .a-link, .m-list-second .a-link, .m-list .a-link-primary, .m-list-second .a-link-primary, .m-list .a-text, .m-list-second .a-text, .m-list .a-text-warning, .m-list-second .a-text-warning {
   display: block;
 }
 
-.m-list .a-link:not(:first-child), .m-list-second .a-link:not(:first-child), .m-list .a-text:not(:first-child), .m-list-second .a-text:not(:first-child) {
+.m-list .a-link:not(:first-child), .m-list-second .a-link:not(:first-child), .m-list .a-link-primary:not(:first-child), .m-list-second .a-link-primary:not(:first-child), .m-list .a-text:not(:first-child), .m-list-second .a-text:not(:first-child), .m-list .a-text-warning:not(:first-child), .m-list-second .a-text-warning:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -821,6 +886,34 @@ a {
       align-self: center;
 }
 
+.m-notification, .m-notification-primary {
+  width: 90%;
+}
+
+.m-notification-primary {
+  padding: 5rem 5rem;
+  background-color: #9e8070;
+  border-radius: 1rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  z-index: 999;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-notification-primary {
+    max-width: 50rem;
+    top: -10rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .m-notification-primary {
+    top: -15rem;
+  }
+}
+
 .m-form, .m-form-primary {
   padding: 1.5rem;
 }
@@ -845,6 +938,20 @@ a {
 
 .m-form-primary .a-btn-second {
   margin: 2rem 5%;
+}
+
+.m-menu, .m-menu-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.m-menu:not(:first-child), .m-menu-primary:not(:first-child) {
+  margin-right: 0.5rem;
+}
+
+.m-menu-primary {
+  position: absolute;
 }
 
 .o-header, .o-header-primary, .o-header-second {
@@ -935,6 +1042,7 @@ a {
 }
 
 .o-header-second {
+  position: relative;
   height: 37.5rem;
   padding-top: 3.5rem;
   border: 1px solid;
@@ -1251,19 +1359,19 @@ a {
 }
 
 @media screen and (min-width: 62rem) {
-  .o-events .m-list-primary .a-link:not(:last-child) {
+  .o-events .m-list-primary .a-link:not(:last-child), .o-events .m-list-primary .a-link-primary:not(:last-child) {
     margin-right: 2rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .o-events .m-list-primary .a-link:not(:last-child) {
+  .o-events .m-list-primary .a-link:not(:last-child), .o-events .m-list-primary .a-link-primary:not(:last-child) {
     margin: 1rem 0rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .o-events .m-list-primary .a-link {
+  .o-events .m-list-primary .a-link, .o-events .m-list-primary .a-link-primary {
     margin: 1rem 0rem;
   }
 }
@@ -1297,6 +1405,7 @@ a {
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
+  position: relative;
   background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960668/Dine-Restaurant-Site/Homepage/zg3akiqtea4l1heuo8kc.jpg") no-repeat center/cover;
 }
 
@@ -1440,6 +1549,25 @@ a {
     left: 70%;
     top: -28rem;
     z-index: 2;
+  }
+}
+
+.o-reservation-form .m-notification-primary {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: -5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-reservation-form .m-notification-primary {
+    top: -10rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-reservation-form .m-notification-primary {
+    top: -20rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

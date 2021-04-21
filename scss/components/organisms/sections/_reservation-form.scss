@@ -39,3 +39,22 @@
   }
 
 }
+
+.o-reservation-form {
+
+  .m-notification-primary {
+    transform: translateX(-50%);
+    left: 50%;
+    top: -5rem;
+
+    @include breakpoint-up('md') {
+      top: -10rem;
+    }
+
+    @include breakpoint-up('lg') {
+      top: -20rem;
+    }
+
+  }
+
+}

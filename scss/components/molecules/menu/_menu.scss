@@ -1,0 +1,8 @@
+.m-menu {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-right: 0.5rem;
+  }
+
+}

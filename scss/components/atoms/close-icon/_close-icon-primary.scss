@@ -1,0 +1,15 @@
+.a-close-icon-primary {
+  @extend .a-close-icon;
+  width: 30px;
+  height: 30px;
+  left: 100%;
+  top: -1rem;
+
+  &:after, &:before {
+
+    height: 30px;
+    border-left: 2px solid;
+    left: 14px;
+  }
+
+}
