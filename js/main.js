@@ -192,14 +192,13 @@ document.addEventListener('DOMContentLoaded', function() {
       if(formElements[i].classList.contains('a-text-warning')) {
         errors.push('error');
       }
-
-      if (errors.length === 0) {
-        notificationEl.classList.add('show');
-        notificationEl.classList.remove('hidden');
-      }
-
     }
 
+    if (errors.length === 0) {
+      notificationEl.classList.add('show');
+      notificationEl.classList.remove('hidden');
+    }
+    console.log(errors);
   });
   
 });

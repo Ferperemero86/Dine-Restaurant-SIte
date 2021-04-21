@@ -21,6 +21,23 @@
 
 }
 
+.o-header-second {
+
+  .m-menu-primary {
+
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+
+
+    @include breakpoint-up('lg') {
+      justify-content: flex-start;
+    }
+
+  }
+
+}
+
 
 .o-header-second {
 

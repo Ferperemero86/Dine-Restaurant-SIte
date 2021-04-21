@@ -950,10 +950,6 @@ a {
   margin-right: 0.5rem;
 }
 
-.m-menu-primary {
-  position: absolute;
-}
-
 .o-header, .o-header-primary, .o-header-second {
   width: 100%;
 }
@@ -1064,6 +1060,22 @@ a {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1617960560/Dine-Restaurant-Site/Booking/gsftg55p20ybhamoicy3.jpg") no-repeat center/cover;
+  }
+}
+
+.o-header-second .m-menu-primary {
+  width: 100%;
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 90rem) {
+  .o-header-second .m-menu-primary {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
